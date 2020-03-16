@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ItemStyles = styled.div`
+const Item = styled.div`
   background: white;
   border: 1px solid ${props => props.theme.offWhite};
   box-shadow: ${props => props.theme.bs};
@@ -13,6 +13,7 @@ const ItemStyles = styled.div`
     object-fit: cover;
   }
   p {
+    font-size: 12px;
     line-height: 2;
     font-weight: 300;
     flex-grow: 1;
@@ -29,10 +30,11 @@ const ItemStyles = styled.div`
     & > * {
       background: white;
       border: 0;
+      font-family: 'radnika_next';
       font-size: 1rem;
       padding: 1rem;
     }
   }
 `;
 
-export default ItemStyles;
+export default Item;
